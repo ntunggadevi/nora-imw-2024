@@ -1,0 +1,11 @@
+.hr-thick {
+    border-width: 20px;
+
+}
+
+.hr-single {
+    border-top-width: 20px;
+    border-bottom-width: 0px; 
+    border-right-width: 0px; 
+    border-left-width: 0px;
+}
