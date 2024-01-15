@@ -29,7 +29,9 @@ hr {
     width: 200px;
     height: 200px;
     border-radius: 30%;
-    background-color: red;
+    background-color: lemonchiffon;
+    outline-width: 10px;
+    outline-color: red;
 }
 
 .rectangle {
@@ -42,8 +44,14 @@ hr {
 
 /* background colour tutorial from https://www.w3schools.com/cssref/pr_background-color.php*/
 body {
-    background-image: linear-gradient(yellow, coral);
+    background-image: linear-gradient(yellow,coral,mediumvioletred, mediumpurple);
 } 
+
+.depth-layering {
+    position: relative;
+    /* Necessary line if you want to position elements within a div. Otherwise, the elements will be positioned to the browser */
+    width: 200px;
+}
 
 .depth-layering .front {
     position: absolute;
@@ -52,8 +60,19 @@ body {
     border: 2px solid white;
 }
 
+.depth-layering .middle {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 2px solid white;
+}
+
 .depth-layering .back {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.blur {
+    filter: blur(5px);
 }
