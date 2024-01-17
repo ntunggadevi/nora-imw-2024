@@ -1,0 +1,91 @@
+body{
+    background-color: #b4b4b4;
+}
+
+.painting-1{
+    display: grid;
+    width: 600px;
+    height: 600px;
+    /* for testing */
+    border: 1px solid black;
+
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+
+.peach{
+    background-color: #f6d6d3;
+}
+
+.black{
+    background-color: #21252F;
+}
+
+.red{
+    background-color: #D84C44;
+}
+
+.blue{
+    background-color: #3A81DC;
+}
+
+.paleYellow{
+    background-color: #F7CF59 ;
+}
+
+.gold{
+    background-color: #F4C447 ;
+}
+
+.red-orange{
+    background-color: #EC784D ;
+}
+
+.orange{
+    background-color: #F1A24F;
+}
+
+.green{
+    background-color: #4E9C6F;
+}
+
+.paleGreen{
+    background-color: #E0F0CE;
+}
+
+
+.darkRed{
+    background-color: #C34546;
+}
+
+.darkBlue{
+    background-color: #2147C2;
+}
+
+.cream{
+    background-color: #F8EAE6;
+}
+
+.lightYellow{
+    background-color: #F1E9CE;
+}
+
+.border-top-blue{
+    border-top: 15px solid #84C4E8;
+}
+
+.border-bottom-light-yellow{
+    border-bottom: 15px solid #F1E9CE ;
+}
+
+.border-bottom-yellow{
+    border-bottom: 15px solid #F4C447;
+}
+
+.border-bottom-orange{
+    border-bottom: 15px solid #EC784D;
+}
+
+.border-top-red{
+    border-top: 15px solid #D84B45;
+}
