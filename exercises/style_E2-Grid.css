@@ -1,7 +1,19 @@
+/* Nora Tunggadevi
+3190797
+Prof. Peter Ha
+Interactive Media Web (GDES-3091-501)
+Jan 17,2024 */
+
+/* Done in class */
+
+/* background of webpage */
 body{
     background-color: #b4b4b4;
+    font-family: Arial, sans-serif; /*https://www.w3schools.com/css/tryit.asp?filename=trycss_font_arial*/
 }
 
+
+/* making the grid */
 .painting-1{
     display: grid;
     width: 600px;
@@ -13,6 +25,7 @@ body{
     grid-template-rows: repeat(15,1fr);
 }
 
+/* colour pallete */
 .cream{
     background-color: #fdf9f1;
 }
@@ -29,6 +42,7 @@ body{
     background-color: #fdd900 ;
 }
 
+/* lines */
 .border-right{
     border-right: 20px solid #4d4d42;
 }

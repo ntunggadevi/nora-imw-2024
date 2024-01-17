@@ -1,0 +1,74 @@
+/* Nora Tunggadevi
+3190797
+Prof. Peter Ha
+Interactive Media Web (GDES-3091-501)
+Jan 17,2024 */
+
+/* Painting that I will be replicating is Mark Rothko's "No. 3/No. 13" (1949) 
+Source: https://www.moma.org/collection/works/79687?artist_id=5047&page=1&sov_referrer=artist 
+*/
+
+/* background of page */
+body{
+    background-color: #b4b4b4;
+    font-family: Arial, sans-serif; /*https://www.w3schools.com/css/tryit.asp?filename=trycss_font_arial*/
+}
+
+/* making the grid for painting 3 */
+.painting-3{
+    display: grid;
+    width: 450px;
+    height: 585px;
+    /* for testing */
+    /* border: 1px solid black; */
+
+    /* 20x20 grid */
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(13,1fr);
+}
+
+/* colour pallete */
+.purple{
+    background-color: #873C63;
+}
+
+.orange{
+    background-color: #c24323;
+}
+
+.green{
+    background-color: #5E8052;
+}
+
+.black{
+    background-color: #3C3C3E;
+}
+
+.cream{
+    background-color: #D3BD97;
+}
+
+.green{
+    background-color: #5E8052;
+}
+
+/* borders and lines */
+.border-right-orange{
+    border-right: 25px solid #C24323;
+}
+
+.border-left-orange{
+    border-left: 25px solid #C24323;
+}
+
+.border-left-magenta{
+    border-left: 15px solid #873C63;
+}
+
+.border-top-orange{
+    border-top: 15px solid #C24323;
+}
+
+.border-top-black{
+    border-top: 15px solid #3C3C3E;
+}

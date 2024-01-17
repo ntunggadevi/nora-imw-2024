@@ -1,18 +1,30 @@
+/* Nora Tunggadevi
+3190797
+Prof. Peter Ha
+Interactive Media Web (GDES-3091-501)
+Jan 17,2024 */
+
+/* background of page */
 body{
     background-color: #b4b4b4;
+    font-family: Arial, sans-serif; /*https://www.w3schools.com/css/tryit.asp?filename=trycss_font_arial*/
 }
 
-.painting-1{
+
+/* making the grid for painting 1 */
+.painting-2{
     display: grid;
     width: 600px;
     height: 600px;
     /* for testing */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
+    /* 20x20 grid */
     grid-template-columns: repeat(20,1fr);
     grid-template-rows: repeat(20,1fr);
 }
 
+/* colour pallete */
 .peach{
     background-color: #f6d6d3;
 }
@@ -70,6 +82,8 @@ body{
     background-color: #F1E9CE;
 }
 
+
+/* borders and lines */
 .border-top-blue{
     border-top: 15px solid #84C4E8;
 }
