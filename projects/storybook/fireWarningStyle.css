@@ -1,0 +1,64 @@
+/* Nora Tunggadevi
+3190797
+Prof. Peter Ha
+Interactive Media Web (GDES-3091-501)
+Jan 23,2024 */
+
+
+body{
+    background-color: #0500f2;
+
+}
+
+/* font settings */
+p{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100px;
+    font-style: bold;
+    text-align:center;
+}
+
+/* font settings for the "!" on the pointer  */
+p1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    font-style: bold;
+    text-align: center;
+    margin-left: -5px;
+}
+
+/* the paper of the fire warning  */
+.fireWarningSlip {
+    width: 1000px;
+    height:350px;
+    background-color: whitesmoke;
+    margin:auto;
+}
+
+/* graph that shows the fire dangers stages */
+.firePointer{
+    height: 100px;
+    width: 700px;
+    background-image: linear-gradient(to right, green , yellow,orange,red);
+    margin: auto;
+    margin-top: -30px;
+}
+
+/* pointer that indicate the danger level */
+.pointer {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid black;
+    margin-left: 800px;
+    margin-top: -20px;
+}
+
+/* helps to align */
+.flex {
+    display: flex;
+    gap: 0px;
+}

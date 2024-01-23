@@ -1,0 +1,62 @@
+/* Nora Tunggadevi
+3190797
+Prof. Peter Ha
+Interactive Media Web (GDES-3091-501)
+Jan 23,2024 */
+
+/* smokey background of the forest fire */
+body {
+    background-image: linear-gradient(grey 40%, red,darkred,black);
+    background-repeat: no-repeat;
+    background-size: auto;
+    /*background sizing and no repeat from: https://stackoverflow.com/questions/63755406/how-to-stop-repeating-images-in-css#:~:text=The%20CSS%20background%2Drepeat%20is,repeat%3A%20no%2Drepeat%3B%20. */
+} 
+
+/* smokes caused by the fire that leads to the sky */
+.smoke {
+    height: 100px;
+    width: 300px;
+    background-color: #b3b3b3;
+    border-radius: 50%;
+    margin-left: -150px;
+  }
+
+/* different sizes of trees */
+.burntTreesSmall {
+    height: 720px;
+    width: 20px;
+    background-image: linear-gradient(black 60%,orangered,orange,yellow);
+    margin-left: 30px;
+}
+
+.burntTreesLarge {
+    height: 720px;
+    width: 100px;
+    background-image: linear-gradient(black 60%,orangered,orange,yellow);
+    margin-left: 70px;
+}
+
+.burntTreesMedium {
+    height: 720px;
+    width: 50px;
+    background-image: linear-gradient(black 60%,orangered,orange,yellow);
+    margin-left: 40px;
+}
+
+/* Flex is to make the shapes align beside each other */
+.flex {
+    display: flex;
+    gap: 0px;
+}
+
+
+/* property change of audios */
+audio::-webkit-media-controls-panel {
+    background-image: linear-gradient(yellow,orangered,red,midnightblue);
+  }  /* changing the audio controller property from: https://dev.to/sh20raj/styling-the-html5-tag-with-css-and-webkit-properties-nf3#:~:text=While%20the%20tag%20itself,to%20match%20your%20design%20aesthetics. */
+
+
+/*blurring filter*/
+.blur{
+    filter: blur(5px);
+}

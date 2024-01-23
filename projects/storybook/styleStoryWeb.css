@@ -1,3 +1,11 @@
+/* Nora Tunggadevi
+3190797
+Prof. Peter Ha
+Interactive Media Web (GDES-3091-501)
+Jan 23,2024 */
+
+/* mountains */
+
 .triangle {
     width: 0;
     height: 0;
@@ -7,72 +15,28 @@
     border-bottom: 500px solid #8098ba;
 }
 
-.line-dashed {
-    border-top-width: 20px;
-    border-style: none;
-    border-top-style: dashed;
-    /* colour code from: https://www.w3schools.com/cssref/pr_text_color.php */
-    color: yellow;
-}
-
-hr {
-    border-width: 10px;
-}
-
 /* Flex is to make the shapes align beside each other */
 .flex {
     display: flex;
     gap: 0px;
 }
 
+/* sun */
 .circle {
     width: 200px;
     height: 200px;
     border-radius: 30%;
     background-color: lemonchiffon;
     outline-width: 10px;
-    outline-color: red;
 }
 
-.rectangle {
-    height: 100px;
-    /* how can i make the width of the rectangle fit to window size  */
-    width: 1500px;
-    background-color: rgb(89, 83, 104);
-    border-left: 0;
-  }
-
-/* background colour tutorial from https://www.w3schools.com/cssref/pr_background-color.php*/
+/* background colour */
 body {
-    background-image: linear-gradient(yellow,coral,mediumvioletred, mediumpurple);
+    background-image: linear-gradient(yellow,coral,orange,orangered,rgb(10, 0, 31)); /* background colour tutorial from https://www.w3schools.com/cssref/pr_background-color.php*/
 } 
 
-.depth-layering {
-    position: relative;
-    /* Necessary line if you want to position elements within a div. Otherwise, the elements will be positioned to the browser */
-    width: 200px;
-}
-
-.depth-layering .front {
-    position: absolute;
-    top: 60px;
-    left: 60px;
-    border: 2px solid white;
-}
-
-.depth-layering .middle {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    border: 2px solid white;
-}
-
-.depth-layering .back {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.blur {
+/* blur effect */
+.blur{
     filter: blur(5px);
 }
+

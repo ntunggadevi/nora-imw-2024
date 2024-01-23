@@ -1,0 +1,52 @@
+/* Nora Tunggadevi
+3190797
+Prof. Peter Ha
+Interactive Media Web (GDES-3091-501)
+Jan 23,2024 */
+
+body {
+    background-color: #0500f2;
+} 
+
+/* car window */
+.carWindow {
+    height: 500px;
+    max-width: 1400px;
+    background-image: linear-gradient(yellow,orange,coral,orangered,rgb(10, 0, 31));
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+/* steering wheel  */
+.steer_Wheel {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background-color: #8000FF;
+    margin-left:100px;
+    margin-top: -100px;
+}
+
+/* radio  */
+.radio {
+    width: 250px;
+    height: 50px;
+    background-color: #05FF00;
+    margin-left:100px;
+    margin-top:100px;
+}
+
+/* fire warning slip  */
+.fireWarning{
+    width:200px;
+    height:30px;
+    background-color: whitesmoke;
+    margin-left: 100px;
+}
+
+/* Flex is to make the shapes align beside each other */
+.flex {
+    display: flex;
+    gap: 0px;
+}
