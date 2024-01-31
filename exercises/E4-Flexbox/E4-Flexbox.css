@@ -16,7 +16,8 @@ header {
     padding: 30px 36px;
 }
 
-ul {
+/* for no style lists of links */
+.noStyleUl {
     list-style-type: none;
 
     li {
@@ -53,6 +54,7 @@ body {
     flex-direction: column;
 }
 
+/* headers and paragraph properties */
 h1 {
     font-size: 120px;
     line-height: 106px;
@@ -60,17 +62,105 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
     font-weight: 500;
 }
 
-.call-to-action {
-    text-transform: uppercase;
+h3 {
+    margin-top: 31px;
+    margin-left: 36.5px;
 }
+
+h4 {
+    margin-top: 31px;
+    margin-left: 36.5px;
+    font-size: 18px
+}
+
+p {
+    margin-top: 12px;
+    margin-left: 36.5px;
+    margin-right: 38.4px;
+    margin-bottom: 153px;
+}
+
+p1 {
+    font-size: 10px;
+    margin-left: 38.4px;
+    margin-right: 20px;
+}
+
+/* footer section properties */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* height: 129px; */
+    background-color: white;
+    border: 1px solid black;
+}
+
+.footer-section-item {
+    border: none;
+}
+
+
+/* spacer for footer so it doesnt overlap. Source: https://theme.co/forum/t/footer-content-overlapping-with-main-content/73859/7 */
+.footer-spacer {
+    min-height: calc(100vh - 95px);
+}
+
+.pFooter {
+    font-size: 10px;
+}
+
+.footerSocial {
+    margin-top: 56px;
+    text-align: center;
+    /* margin-left: 185px; */
+}
+
+.footerLink {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inList {
+
+    list-style-type: none;
+    text-align: right;
+    margin-right: 37px;
+    margin-top: 16px;
+
+
+    li {
+        font-size: 18px;
+
+        &:nth-child(2) {
+            margin-top: 16px;
+        }
+
+        &:nth-child(3) {
+            margin-top: 16px;
+        }
+    }
+}
+
+/* call to action links */
+
+.call-to-action {
+    margin-left: 36.5px;
+}
+
+/* information section  */
 
 .info-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 320px;
     border: 1px solid black;
+}
+
+.info-section-item {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
 }
