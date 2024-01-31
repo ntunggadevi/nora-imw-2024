@@ -40,6 +40,13 @@ body {
     flex-direction: column;
 }
 
+.intro-to-info {
+    border-top: 1px solid black;
+    border-left: none;
+    border-right: none;
+    height: 113px;
+}
+
 /* headers and paragraph properties */
 h1 {
     font-size: 120px;
@@ -49,6 +56,8 @@ h1 {
 
 h2 {
     font-weight: 500;
+    margin-left: 36.5px;
+    margin-top: 37px;
 }
 
 h3 {
