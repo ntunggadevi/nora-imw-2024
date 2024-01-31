@@ -1,3 +1,9 @@
+/* Nora Tunggadevi
+3190797
+Prof. Peter Ha
+Interactive Media Web (GDES-3091-501)
+Jan 31,2024 */
+
 /* '*' to select everything */
 
 * {
@@ -14,26 +20,6 @@ header {
     /* vertical spacing */
     align-items: center;
     padding: 30px 36px;
-}
-
-/* for no style lists of links */
-.noStyleUl {
-    list-style-type: none;
-
-    li {
-        font-size: 18px;
-        display: inline-block;
-
-        &:first-child {
-            margin-right: 44px;
-        }
-
-        &:nth-child(2) {
-            margin-right: 44px;
-        }
-
-    }
-
 }
 
 body {
@@ -82,8 +68,24 @@ p {
     font-size: 14px;
 }
 
-.pFooter {
-    font-size: 10px;
+/* List Styles */
+.noStyleUl {
+    list-style-type: none;
+
+    li {
+        font-size: 18px;
+        display: inline-block;
+
+        &:first-child {
+            margin-right: 44px;
+        }
+
+        &:nth-child(2) {
+            margin-right: 44px;
+        }
+
+    }
+
 }
 
 .inList {
@@ -131,7 +133,6 @@ p {
 }
 
 /* Footer  */
-
 footer {
     display: flex;
     height: 129px;
@@ -139,4 +140,8 @@ footer {
     justify-content: space-between;
     /* vertical spacing */
     align-items: center;
+}
+
+.pFooter {
+    font-size: 10px;
 }
