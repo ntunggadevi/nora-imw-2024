@@ -7,7 +7,7 @@
 
 header {
     background-color: white;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     display: flex;
     /* horizontal spacing  */
     justify-content: space-between;
@@ -71,7 +71,6 @@ h3 {
 }
 
 h4 {
-    margin-top: 31px;
     margin-left: 36.5px;
     font-size: 18px
 }
@@ -80,48 +79,11 @@ p {
     margin-top: 12px;
     margin-left: 36.5px;
     margin-right: 38.4px;
-    margin-bottom: 153px;
-}
-
-p1 {
-    font-size: 10px;
-    margin-left: 38.4px;
-    margin-right: 20px;
-}
-
-/* footer section properties */
-
-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* height: 129px; */
-    background-color: white;
-    border: 1px solid black;
-}
-
-.footer-section-item {
-    border: none;
-}
-
-
-/* spacer for footer so it doesnt overlap. Source: https://theme.co/forum/t/footer-content-overlapping-with-main-content/73859/7 */
-.footer-spacer {
-    min-height: calc(100vh - 95px);
+    font-size: 14px;
 }
 
 .pFooter {
     font-size: 10px;
-}
-
-.footerSocial {
-    margin-top: 56px;
-    text-align: center;
-    /* margin-left: 185px; */
-}
-
-.footerLink {
-    justify-content: space-between;
-    align-items: center;
 }
 
 .inList {
@@ -129,7 +91,6 @@ footer {
     list-style-type: none;
     text-align: right;
     margin-right: 37px;
-    margin-top: 16px;
 
 
     li {
@@ -145,17 +106,11 @@ footer {
     }
 }
 
-/* call to action links */
-
-.call-to-action {
-    margin-left: 36.5px;
-}
-
-/* information section  */
-
+/* info section properties */
 .info-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    height: 319px;
     border: 1px solid black;
 }
 
@@ -163,4 +118,25 @@ footer {
     border-right: 1px solid black;
     border-left: 1px solid black;
 
+}
+
+.call-to-action {
+    margin-top: 136px;
+    margin-left: 36.5px;
+    /* position: absolute; */
+}
+
+.ctaFont {
+    font-size: 12px;
+}
+
+/* Footer  */
+
+footer {
+    display: flex;
+    height: 129px;
+    /* horizontal spacing  */
+    justify-content: space-between;
+    /* vertical spacing */
+    align-items: center;
 }
