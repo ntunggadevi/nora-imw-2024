@@ -5,7 +5,7 @@ Interactive Media Web (GDES-3091-501)
 Jan 25,2024 */
 
 /* HTML Properties */
-body{
+body {
     background-color: rgb(26, 26, 26);
 }
 
@@ -15,34 +15,34 @@ span {
 }
 
 a {
-    &:hover{
+    &:hover {
         color: rgb(94, 180, 255);
     }
 }
 
 /* aligns texts to center  */
-.center{
+.center {
     text-align: center;
 }
 
 /* Font/typeface properties */
-.adobe-font{
+.adobe-font {
     font-family: "pain-de-mie", sans-serif;
     font-weight: 400;
     font-style: normal;
 
-    &:hover{
-        color:palevioletred;
-        animation-name:rotate;
+    &:hover {
+        color: palevioletred;
+        animation-name: rotate;
         animation-duration: 1.5s;
     }
 }
 
-.google-font{
+.google-font {
     font-family: 'Rubik Moonrocks', sans-serif;
     font-size: 100px;
 
-    &:hover{
+    &:hover {
         color: lime;
         animation-name: grow;
         animation-duration: 5s;
@@ -53,16 +53,16 @@ a {
     font-family: 'Bespoke';
     src: url('wavy/Bespoke-S33ArGEPn5.eot');
     src: url('wavy/Bespoke-S33ArGEPn5.eot?#iefix') format('embedded-opentype'),
-       url('wavy/Bespoke-S33ArGEPn5.woff') format('woff'),
-       url('wavy/Bespoke-S33ArGEPn5.ttf') format('truetype'),
-       url('wavy/Bespoke-S33ArGEPn5.svg#Bespoke-S33ArGEPn5') format('svg');
-  }
+        url('wavy/Bespoke-S33ArGEPn5.woff') format('woff'),
+        url('wavy/Bespoke-S33ArGEPn5.ttf') format('truetype'),
+        url('wavy/Bespoke-S33ArGEPn5.svg#Bespoke-S33ArGEPn5') format('svg');
+}
 
-.wavy{
+.wavy {
     font-family: 'Bespoke', sans-serif;
     font-size: 100px;
 
-    &:hover{
+    &:hover {
         color: gold;
         animation-name: stretch;
         animation-duration: 5s;
@@ -71,32 +71,31 @@ a {
 
 /* animation */
 @keyframes grow {
-    to{
-        transform: scale(2,2);
+    to {
+        transform: scale(2, 2);
     }
 
-    from{
-        transform: scale(1,1);
+    from {
+        transform: scale(1, 1);
     }
 }
 
 @keyframes rotate {
-    to{
-        transform: rotate(360deg) ;
+    to {
+        transform: rotate(360deg);
     }
 
-    from{
+    from {
         transform: rotate(0deg);
     }
 }
 
 @keyframes stretch {
-    to{
-        transform: skew(20deg,20deg) ;
+    to {
+        transform: skew(20deg, 20deg);
     }
 
-    from{
-        transform: skew(0deg,0deg);
+    from {
+        transform: skew(0deg, 0deg);
     }
 }
-

@@ -1,0 +1,65 @@
+h1 {
+    font-family: 'Megrim', system-ui;
+    text-align: right;
+    font-size: 40px;
+    margin-right: 53px;
+}
+
+.titleFont {
+    font-family: "p22-arts-and-crafts", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 80px;
+    text-align: right;
+}
+
+.mainEventInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.mainEventInfoItem {
+    display: flex;
+    border: none;
+}
+
+
+
+.black {
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+}
+
+.white {
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+}
+
+.yellow {
+    background-color: #F2CB05;
+    color: #F23838;
+}
+
+.red {
+    background-color: #F23838;
+    color: #F2CB05;
+}
+
+.grow {
+    &:hover {
+        animation-name: grow;
+        animation-duration: 5s;
+
+    }
+}
+
+@keyframes grow {
+    to {
+        transform: scale(2, 2);
+    }
+
+    from {
+        transform: scale(1, 1);
+    }
+}
