@@ -1,0 +1,40 @@
+body {
+    background-color: #F0FA1F;
+    font-family: "transat", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Megrim', system-ui;
+    font-size: 40px;
+}
+
+.centerText {
+    text-align: center;
+    padding: auto;
+}
+
+.titleFont {
+    font-family: "p22-arts-and-crafts", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 65px;
+    text-align: center;
+}
+
+.rectangle {
+    width: 590px;
+    /* Responsive rectangle to content using padding. source: https://stackoverflow.com/questions/49261207/making-a-responsive-rectangle-that-is-higher-then-width-with-centered-content */
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #504C4B;
+}
+
+.glow {
+    &:hover {
+        /* Glowing text code from: https://stackoverflow.com/questions/74484591/how-to-make-text-glow-with-hover */
+        text-shadow: 0 0 7px rgb(111 196 227), 0 0 122px rgb(111 196 227);
+        color: rgb(183, 232, 249);
+        animation-duration: 5s;
+    }
+}
