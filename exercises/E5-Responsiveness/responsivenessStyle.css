@@ -1,0 +1,86 @@
+/* Nora Tunggadevi
+3190797
+Prof. Peter Ha
+Interactive Media Web (GDES-3091-501)
+Feb 7,2024 */
+
+body {
+    background: url(https://assets.epicurious.com/photos/63e54a0664e14d52936a2937/16:9/w_1920,c_limit/CoffeeSubscriptions_IG_V1_030922_6350_V1_final.jpg);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 10vw;
+}
+
+.tablet {
+    /* Hides answer on desktop */
+    display: none;
+}
+
+img {
+    /* Hides image on desktop */
+    display: none;
+}
+
+/* desktop */
+@media (max-width: 1199px) {
+    body {
+        background: url(https://assets.epicurious.com/photos/63e54a0664e14d52936a2937/16:9/w_1920,c_limit/CoffeeSubscriptions_IG_V1_030922_6350_V1_final.jpg);
+        color: white;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    body {
+        background: rgb(21, 21, 21);
+        color: #000000;
+
+        /* change to burlywood color on hover */
+        &:hover {
+            color: burlywood;
+        }
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        /* show answer on tablet size */
+        display: block;
+    }
+
+    img {
+
+        display: none;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 480px) {
+    body {
+        background-color: sienna;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    /* show GIF of woman spitting coffee on mobile size */
+    img {
+        display: block;
+    }
+}

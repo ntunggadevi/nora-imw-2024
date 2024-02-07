@@ -9,10 +9,7 @@ h1 {
     font-size: 40px;
 }
 
-.centerText {
-    text-align: center;
-    padding: auto;
-}
+
 
 .titleFont {
     font-family: "p22-arts-and-crafts", sans-serif;
@@ -20,6 +17,11 @@ h1 {
     font-style: normal;
     font-size: 65px;
     text-align: center;
+}
+
+.centerText {
+    text-align: center;
+    padding: auto;
 }
 
 .rectangle {
