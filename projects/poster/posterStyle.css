@@ -52,7 +52,7 @@ h1 {
     text-align: center;
     color: #1F2324;
     width: 150px;
-    /* align height layout to circle: https://www.w3schools.com/css/css_align.asp  */
+    /* align height layout to shape: https://www.w3schools.com/css/css_align.asp  */
     padding: 60px 0;
 }
 
@@ -77,7 +77,7 @@ h1 {
     text-align: center;
     color: #1F2324;
     width: 100px;
-    /* align height layout to circle: https://www.w3schools.com/css/css_align.asp  */
+    /* align height layout to shape: https://www.w3schools.com/css/css_align.asp  */
     padding: 40px 0;
 }
 
@@ -102,7 +102,7 @@ h1 {
     text-align: center;
     color: #1F2324;
     width: 100px;
-    /* align height layout to circle: https://www.w3schools.com/css/css_align.asp  */
+    /* align height layout to shape: https://www.w3schools.com/css/css_align.asp  */
     padding: 40px 0;
 }
 
@@ -133,7 +133,6 @@ p {
     font-size: 16px;
     width: 150px;
     color: #F0FA1F;
-    /* border: 1px solid black; */
     padding: 1%;
 }
 
@@ -152,7 +151,6 @@ p {
 .titleSpace {
     /* vertical spacing */
     align-items: center;
-    /* margin-left: 40px; */
 }
 
 .gridTitle {
@@ -191,7 +189,6 @@ p {
 }
 
 .fringe {
-    /* height: fit-content; */
     border: 2px solid black;
     height: 300PX;
     width: 150px;
