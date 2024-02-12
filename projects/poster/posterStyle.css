@@ -249,3 +249,65 @@ footer {
     text-align: center;
     font-size: 12px;
 }
+
+/* about */
+
+h3 {
+    font-family: "transat", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    color: #1F2324;
+    line-height: 25%;
+}
+
+.aboutBox {
+    margin-top: 10px;
+    height: fit-content;
+    width: fit-content;
+    padding: 1px;
+    background-color: #F0FA1F;
+}
+
+.gridTitleAbout {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.gridTitleAboutItem {
+    border: none;
+}
+
+.back {
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid #AC9F8F;
+    border-bottom: 50px solid transparent;
+
+    rotate: 20deg;
+
+
+    &:hover {
+        border-right: 100px solid #F0FA1F;
+        transform: rotate(-20deg);
+        transition-duration: 1s;
+    }
+}
+
+.backButton {
+    margin-top: -10px;
+    margin-left: 10px;
+    text-align: center;
+    color: #1F2324;
+    width: 100px;
+    /* align height layout to shape: https://www.w3schools.com/css/css_align.asp  */
+    padding: 1%;
+}
+
+.pSection {
+    color: #C3C2C0;
+    font-size: medium;
+}
