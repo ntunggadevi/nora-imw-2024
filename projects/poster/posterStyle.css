@@ -1,64 +1,251 @@
+body {
+    background-color: #1F2324;
+}
+
+a {
+    /* removing underline from link code source: https://www.shecodes.io/athena/17496-how-to-remove-the-underline-of-a-link-in-css#:~:text=To%20remove%20the%20underline%20of%20a%20link%2C%20you%20can%20use,and%20set%20it%20to%20none%20.&text=This%20will%20remove%20the%20underline%20of%20all%20links%20in%20your%20HTML%20document.  */
+    text-decoration: none;
+
+    color: #1F2324;
+    font-family: "transat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 h1 {
     font-family: 'Megrim', system-ui;
-    text-align: right;
     font-size: 40px;
-    margin-right: 53px;
+    color: #C3C2C0;
+    margin-top: 0px;
 }
 
 .titleFont {
     font-family: "p22-arts-and-crafts", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 80px;
-    text-align: right;
+    font-size: 70px;
+    color: #F0FA1F;
 }
 
-.mainEventInfo {
+.about {
+    margin-top: 10px;
+    margin-left: 100px;
+    height: 150px;
+    width: 150px;
+    background-color: #AC9F8F;
+    border-radius: 50%;
+    border: none;
+    rotate: 30deg;
+
+
+
+
+    &:hover {
+        background-color: #F0FA1F;
+        transform: rotate(-30deg);
+        transition-duration: 1s;
+    }
+}
+
+
+.aboutButton {
+    text-align: center;
+    color: #1F2324;
+    width: 150px;
+    /* align height layout to circle: https://www.w3schools.com/css/css_align.asp  */
+    padding: 60px 0;
+}
+
+.reserve {
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: #AC9F8F;
+
+    rotate: -20deg;
+
+
+    &:hover {
+        background-color: #F0FA1F;
+        transform: rotate(20deg);
+        transition-duration: 1s;
+    }
+}
+
+.reserveButton {
+    text-align: center;
+    color: #1F2324;
+    width: 100px;
+    /* align height layout to circle: https://www.w3schools.com/css/css_align.asp  */
+    padding: 40px 0;
+}
+
+.furtherInfo {
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: #AC9F8F;
+
+    rotate: 20deg;
+
+
+    &:hover {
+        background-color: #F0FA1F;
+        transform: rotate(-20deg);
+        transition-duration: 1s;
+    }
+}
+
+.furtherInfoButton {
+    text-align: center;
+    color: #1F2324;
+    width: 100px;
+    /* align height layout to circle: https://www.w3schools.com/css/css_align.asp  */
+    padding: 40px 0;
+}
+
+.canadianCultureCenter {
+    margin-top: -20px;
+    height: fit-content;
+    width: fit-content;
+    padding: 1%;
+    background-color: #AC9F8F;
+
+    &:hover {
+        background-color: #F0FA1F;
+        transition-duration: 1s;
+    }
+}
+
+p {
+    margin-left: 40px;
+    margin-right: 40px;
+
+    font-family: "transat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.behindFringe {
+    width: 150px;
+    color: #F0FA1F;
+    /* border: 1px solid black; */
+    padding: 1%;
+}
+
+.transat {
+    font-family: "transat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #D9D9D9;
+    line-height: 25%;
+}
+
+.black {
+    color: #1F2324;
+}
+
+.titleSpace {
+    /* vertical spacing */
+    align-items: center;
+    /* margin-left: 40px; */
+}
+
+.gridTitle {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 30% 70%;
 }
 
-.mainEventInfoItem {
+.gridTitleItem {
     border: none;
 }
 
-
-
-.black {
-    background-color: #0D0D0D;
-    color: #F2F2F2;
+.menuGrid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
 }
 
-.white {
-    background-color: #F2F2F2;
-    color: #0D0D0D;
+.menuGridItem {
+    border: none;
+    display: flex;
+    align-items: center;
 }
 
-.yellow {
-    background-color: #F2CB05;
-    color: #F23838;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
-.red {
-    background-color: #F23838;
-    color: #F2CB05;
+.grid-item {
+    border: none;
+
 }
 
-.grow {
+.lower {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.fringe {
+    /* height: fit-content; */
+    border: 2px solid black;
+    height: 300PX;
+    width: 150px;
+    padding: 1%;
+    background-color: #D9D9D9;
+    text-align: center;
+    transform-origin: 50% 0%;
+
+
     &:hover {
-        animation-name: grow;
-        animation-duration: 5s;
+        transform: rotate(100deg);
+        transition-duration: 2s;
 
     }
 }
 
-@keyframes grow {
-    to {
-        transform: scale(2, 2);
-    }
+.fringeFont {
+    font-family: 'Megrim', system-ui;
+    font-size: 40px;
+}
 
-    from {
-        transform: scale(1, 1);
-    }
+.appearOnHover {
+    /* position behind fringe code source: https://css-tricks.com/forums/topic/partially-hide-text-behind-a-div-box/   */
+    position: relative;
+    z-index: -1;
+
+    margin-top: -210px;
+    margin-left: 40px;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.rotateTitle {
+    rotate: -90deg;
+    margin-top: 125px;
+
+    color: #AC9F8F;
+
+}
+
+.infoSmallColor {
+    color: #D9D9D9;
+}
+
+.performanceSpacing {
+    margin-top: 175px;
+}
+
+footer {
+    width: 100vw;
+    height: fit-content;
+    background-color: #F0FA1F;
+    padding: 3px;
+    text-align: center;
+    font-size: 12px;
 }
