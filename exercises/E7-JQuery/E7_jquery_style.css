@@ -1,0 +1,28 @@
+/* Nora Tunggadevi
+3190797
+Prof. Peter Ha
+Interactive Media Web (GDES-3091-501)
+February 28,2024 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    /* move the circle 1 layer behind the p */
+    z-index: -1;
+}
+
+p {
+    text-align: center;
+    font-size: 200px;
+    color: midnightblue;
+    padding: 30px;
+
+}

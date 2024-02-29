@@ -3,29 +3,19 @@
 // Prof. Peter Ha
 // Interactive Media Web (GDES-3091-501)
 // February 25 ,2024
+// updated: Feb 27, 2024
 
 //1. interaction
 
-//change colour background by clicking on the colour circle
-const greenCircle = document.getElementById("green");
-const pinkCircle = document.getElementById("plum");
-const blueCircle = document.getElementById("blue");
 const interactionContainer = document.getElementById("interactionContainer");
 
-greenCircle.addEventListener("click", function () {
-    // console.log(interactionContainer);
-    interactionContainer.style.backgroundColor = "lightgreen";
-})
+const colorBtns = document.querySelectorAll(".colors");
 
-pinkCircle.addEventListener("click", function () {
-    // console.log(interactionContainer);
-    interactionContainer.style.backgroundColor = "plum";
-})
-
-blueCircle.addEventListener("click", function () {
-    // console.log(interactionContainer);
-    interactionContainer.style.backgroundColor = "lightblue";
-})
+for (let i = 0; i < colorBtns.length; i++) {
+    colorBtns[i].addEventListener('click', function () {
+        interactionContainer.style.backgroundColor = getComputedStyle(colorBtns[i]).backgroundColor;
+    })
+}
 
 //2. loop
 

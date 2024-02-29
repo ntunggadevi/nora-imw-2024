@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* '*' selects all */
+
+body {
+    background-color: aquamarine;
+}
+
+div {
+    box-shadow: 0px 5px 5px black;
+    transition: all 1s;
+    /* background-color: red; */
+
+}
+
+.no-width {
+    width: 0 !important;
+}
+
+p {
+    font-size: 200px;
+}
+
+.foreground {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+}
+
+.background {
+    position: absolute;
+}
+
+/* !importand overides prev css */
