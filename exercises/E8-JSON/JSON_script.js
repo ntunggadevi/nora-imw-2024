@@ -1,3 +1,8 @@
+// Nora Tunggadevi
+// 3190797
+// Prof. Peter Ha
+// Interactive Media Web (GDES-3091-501)
+// March 6,2024
 
 //in class notes
 // let cat = [{
