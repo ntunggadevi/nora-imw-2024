@@ -1,0 +1,37 @@
+/* Nora Tunggadevi
+3190797
+Prof. Peter Ha
+Interactive Media Web (GDES-3091-501)
+Mar 11,2024 */
+
+
+.metaphorLink {
+    width: fit-content;
+    height: fit-content;
+    background-color: slategray;
+    padding: 10px;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    text-decoration: none;
+
+    &:hover {
+        background-color: rgb(255, 94, 188);
+        transition-duration: .25s;
+
+    }
+}
+
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    align-content: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}

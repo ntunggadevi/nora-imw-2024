@@ -1,0 +1,74 @@
+/* Nora Tunggadevi
+3190797
+Prof. Peter Ha
+Interactive Media Web (GDES-3091-501)
+Mar 11,2024 */
+.playlistScreen {
+    width: 90vw;
+    height: fit-content;
+    background-color: limegreen;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 25px;
+    border: solid rgb(139, 0, 81) 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: darkgreen;
+}
+
+body {
+    background-color: palevioletred;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    z-index: 5;
+}
+
+#next {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid rgb(139, 0, 81);
+    border-bottom: 50px solid transparent;
+    float: right;
+    margin-left: 20px;
+    margin-right: 30%;
+
+    &:hover {
+        border-left: 100px solid rgb(189, 255, 173);
+        transition-duration: .25s;
+    }
+
+}
+
+.backHome {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid rgb(139, 0, 81);
+    border-bottom: 50px solid transparent;
+
+    &:hover {
+        border-right: 100px solid rgb(189, 255, 173);
+        transition-duration: .25s;
+    }
+}
+
+.pause {
+    margin-left: 300px;
+    margin-right: 300px;
+    display: flex;
+}
+
+.rectangle {
+    width: 25px;
+    height: 100px;
+    background-color: rgb(139, 0, 81);
+    margin-left: 10px;
+    margin-right: 10px;
+}
