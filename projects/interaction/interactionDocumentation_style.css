@@ -1,0 +1,37 @@
+/* Nora Tunggadevi
+3190797
+Prof. Peter Ha
+Interactive Media Web (GDES-3091-501)
+Mar 26, 2024 */
+
+body {
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 200%;
+}
+
+img {
+    margin-left: 5px;
+    height: 300px;
+}
+
+video {
+    height: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+.ulNoStyle {
+    list-style: none;
+    display: flex;
+}
+
+.right {
+    text-align: right;
+}
