@@ -19,19 +19,10 @@ video {
     height: 300px;
 }
 
-h1 {
-    text-align: center;
-}
-
 h3 {
     margin-left: 20px;
 }
 
-.ulNoStyle {
-    list-style: none;
-    display: flex;
-}
-
-.right {
-    text-align: right;
+p {
+    line-height: 1.5;
 }

@@ -11,135 +11,191 @@ Mar 26, 2024 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interaction: Resize</title>
-    <link rel="icon" type="image/x-icon" href="images-videos/favicon.jpeg">
+
+    <link rel="icon" type="image/png" href="../../images/noraFavicon_Logo-gradient.png">
+
     <link rel="stylesheet" href="interactionDocumentation_style.css">
+    <link rel="stylesheet" type="text/css" href="../../readings/R1/aHandmadeWebStyle.css">
+
+    <!-- Adobe font -->
+    <link rel="stylesheet" href="https://use.typekit.net/oyu6ggj.css">
+
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Codystar&family=Micro+5&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <ul class="ulNoStyle">
-        <li><a href="../../index.html">Home |</a></li><br>
-        <li><a href="a3Idea2.html">| Interaction: Resize</a></li>
-    </ul>
+<body class="micro-5-regular">
+    <div class="spaceMonoAdobe" id="home">
+        <p><a href="../../index.html">Home</a>│<a href="a3Idea2.html">Interaction: Resize</a></p>
+    </div>
 
+    <img id="astronaut" src="../../images/pixelAstronautNora.png">
 
+    <section>
+        <div class="text">
+            <h2>Assignment 3: Interaction (Resize) Documentation</h2>
+        </div>
+    </section>
 
-    <h1>Interaction Documentation</h1>
-    <p>March 26, 2024</p>
     <br>
-    <p>The interaction that was assigned to me was resize. In class, we had looked at some examples of
-        websites that had
-        some interaction embedded into them. One of the websites that inspired me and related to my interaction most was
-        <a href="https://endless-summer.richardmille.com/">"Endless Summer" by Richard Mille</a>. This site uses browser
-        resize to lower and heighten a sun in the sky while also changing colour to the sky for added sunset effect.
-        <br>
-        After seeing the websites, I was eager to start experimenting with coding my webpage. My first idea was that I
-        attempted to replicate <a href="https://endless-summer.richardmille.com/">"Endless Summer" by Richard
-            Mille</a> where I have a component in the website move up and down when the web browser is resized. I wanted
-        to make a "submarine" that moves vertically in the browser as it is resized. I attempted to create this concept
-        using only HTML and CSS,
-        but I turned this idea down quickly since I realized that it was a boring concept for me and too simple; I want
-        something more
-        exciting!
-    </p>
-    <center> <!--center tag: https://www.w3schools.com/tags/tag_center.ASP-->
-        <video controls>
-            <source src="images-videos/noraTunggadevi_Idea1.mp4" type="video/mp4">
-        </video>
-        <p>Idea 1: "Underwater Submarine"</p>
-    </center>
 
-    <p>
-        This is where I was having a very challenging time finding what to do. I decided that it was best to take a
-        break
-        from the project as I was having a "coder's block" for a few weeks. The week when we learned about p5.js was the
-        week I started to pickup the project again and start anew with my experimentation. I'm actually a beginner to
-        JQuery and Vanilla Javascript, so I was not fully comfortable with using them yet for this project, hence why I
-        wanted to use p5.js since I had experience coding with this flavour of Javascript. Also, with the time alotted,
-        I knew from experience that p5.js can help me do something pretty cool and exciting with minimal and
-        uncomplicated logic.
-        <br>
-        Moving on with what to do next with p5.js, I still had a difficult time making my mind on what to make. I
-        started messing around with the drawing with p5.js code we learned in class and I started to experiment with
-        what happened if I used "windowWidth" and "windowHeight" for the x and y axis of a circle. When I tried the
-        code, nothing showed up and thats when I realized I had to offset the x and y axis of the circle so that it
-        would appear on the screen. I used the windowWidth-100 and windowHeight-100 expression respectively in the x and
-        y syntax of the circle and once I run the code it returned something very impressive on the screen; I could draw
-        using the window resize!
-    </p>
-    <center>
-        <img src="images-videos/idea2_drawingWithResize.jpeg">
-        <p>Playing around with p5.js to create a drawing experience with the browser resize feature.</p>
-    </center>
-    <p>
-        Though it was pretty cool, I was having a difficult time with the math since whenever the drawing was done, it
-        could not fill the whole screen, only half of the screen. I tinkered with the numbers over and over again but
-        the issue still persist. <br> Here's when I briefly gave up on this idea and tried to make a sketch where a ball
-        would bounce around in the window and when it is resized, it will adjust automatically to the window size. I
-        used a tutorial by <a href="https://youtu.be/Kp070rI_G48">Mr. Erdreich on YouTube</a> to help me figure out the
-        logic of a
-        bouncing ball. Once I learned how to do it, I inputed the windowWidth and windowHeight code to where the ball
-        detect collision. This code did work perfectly but I didn't like that it was still too simple for the viewer. So
-        then I was stuck again on what to do. I kept on experimenting over and over again thinking that I'll find
-        something I like. I wanted to try making a ballpit simulation with adding more balls (I looked at the tutorial
-        <a href="https://editor.p5js.org/2sman/sketches/Hysj-cm-f">"Basic Collision" by 2sman on p5.js</a> to learn
-        collision) but I was
-        having a difficult time with figuring out how to make the balls collide with each other so I scrapped the idea
-        of the ballpit due to time constraints. I went back to the drawing with resize idea and continued working on it
-        to add cooler effects. I started to put in the windowHeight and windowWidth code into the size of the circle and
-        offset it so its not as big as the screen so it is still viewable. Then, I changed the circle to an ellipse so I
-        can change its height and width. The result was unique! As you resize the window, the shape of the ellipse
-        change in height or width depending of the size of the window.
-    </p>
-    <center>
-        <img src="images-videos/changingDimensionBall.jpeg">
-        <p>Changing the ball dimensions with the resize feature</p>
-    </center>
-    <p> I was proud with what I came up with but I still wanted to make something even more amazing! I looked at the
-        reference page of p5.js and looked at what else I can do. I stumbled upon this <a
-            href="https://p5js.org/reference/#/p5/triangle">triangle page on the p5.js reference</a> and that's when I
-        remembered that I can use 3D rotate to animate the circle to make it look better.</p>
-    <center>
-        <video controls>
-            <source src="images-videos/a3idea2.mp4">
-        </video>
-        <p>Using the rotate Y animation with the resize interaction.</p>
-    </center>
-    <p>It was very cool to see the screen creating something automatically while using the resize feature. Each time I
-        reset the page was like creating an abstract piece of art as I get a different result everytime I play around
-        with the window resize. I tried to change the aesthetic of the drawing and played around with the animation as
-        you can see in these images below.</p>
-    <center>
-        <img src="images-videos/aestheticChange1.jpeg">
-        <img src="images-videos/aestheticChange2.jpeg">
-        <img src="images-videos/aestheticChange3.jpeg">
-        <img src="images-videos/aestheticChange4.jpeg">
-    </center>
-    <p>I decided that I want the final aesthetic to be a dark background with colourful outlines. This reminds me a lot
-        of a topographic map which I think is pretty cool! I followed a p5.js sketch called <a
-            href="https://editor.p5js.org/lberdugo/sketches/BJG10p4dZ">"timer_backgroundColorChange" by Iberdugo on the
-            p5.js editor</a> to help figure out how to change the colour of the outline of the circle every 7.5 seconds.
-    </p>
-    <center>
-        <video controls>
-            <source src="images-videos/final_aesthetic.mp4">
-        </video>
-        <p>Here's the video of the final aesthetic.</p>
-    </center>
+    <div class="spaceMonoAdobe">
 
-    <h3>Resources</h3>
-    <ul>
-        <li><a href="https://endless-summer.richardmille.com/">"Endless Summer" by Richard Mille</a></li>
-        <li><a href="https://youtu.be/Kp070rI_G48">"How to make objects bounce off walls in the P5.js programming
-                language" by Mr. Erdreich on YouTube</a></li>
-        <li><a href="https://editor.p5js.org/2sman/sketches/Hysj-cm-f">"Basic Collision" by 2sman on p5.js</a></li>
-        <li><a href="https://p5js.org/reference/#/p5/triangle">triangle page on the p5.js reference</a></li>
-        <li><a href="https://editor.p5js.org/lberdugo/sketches/BJG10p4dZ">"timer_backgroundColorChange" by Iberdugo on
+        <p>March 26, 2024</p>
+        <br>
+        <p>The interaction that was assigned to me was resize. In class, we had looked at some examples of
+            websites that had
+            some interaction embedded into them. One of the websites that inspired me and related to my interaction most
+            was
+            <a href="https://endless-summer.richardmille.com/">"Endless Summer" by Richard Mille</a>. This site uses
+            browser
+            resize to lower and heighten a sun in the sky while also changing colour to the sky for added sunset effect.
+            <br>
+            After seeing the websites, I was eager to start experimenting with coding my webpage. My first idea was that
+            I
+            attempted to replicate <a href="https://endless-summer.richardmille.com/">"Endless Summer" by Richard
+                Mille</a> where I have a component in the website move up and down when the web browser is resized. I
+            wanted
+            to make a "submarine" that moves vertically in the browser as it is resized. I attempted to create this
+            concept
+            using only HTML and CSS,
+            but I turned this idea down quickly since I realized that it was a boring concept for me and too simple; I
+            want
+            something more
+            exciting!
+        </p>
+        <center> <!--center tag: https://www.w3schools.com/tags/tag_center.ASP-->
+            <video controls>
+                <source src="images-videos/noraTunggadevi_Idea1.mp4" type="video/mp4">
+            </video>
+            <p>Idea 1: "Underwater Submarine"</p>
+        </center>
+
+        <p>
+            This is where I was having a very challenging time finding what to do. I decided that it was best to take a
+            break
+            from the project as I was having a "coder's block" for a few weeks. The week when we learned about p5.js was
+            the
+            week I started to pickup the project again and start anew with my experimentation. I'm actually a beginner
+            to
+            JQuery and Vanilla Javascript, so I was not fully comfortable with using them yet for this project, hence
+            why I
+            wanted to use p5.js since I had experience coding with this flavour of Javascript. Also, with the time
+            alotted,
+            I knew from experience that p5.js can help me do something pretty cool and exciting with minimal and
+            uncomplicated logic.
+            <br>
+            Moving on with what to do next with p5.js, I still had a difficult time making my mind on what to make. I
+            started messing around with the drawing with p5.js code we learned in class and I started to experiment with
+            what happened if I used "windowWidth" and "windowHeight" for the x and y axis of a circle. When I tried the
+            code, nothing showed up and thats when I realized I had to offset the x and y axis of the circle so that it
+            would appear on the screen. I used the windowWidth-100 and windowHeight-100 expression respectively in the x
+            and
+            y syntax of the circle and once I run the code it returned something very impressive on the screen; I could
+            draw
+            using the window resize!
+        </p>
+        <center>
+            <img src="images-videos/idea2_drawingWithResize.jpeg">
+            <p>Playing around with p5.js to create a drawing experience with the browser resize feature.</p>
+        </center>
+        <p>
+            Though it was pretty cool, I was having a difficult time with the math since whenever the drawing was done,
+            it
+            could not fill the whole screen, only half of the screen. I tinkered with the numbers over and over again
+            but
+            the issue still persist. <br> Here's when I briefly gave up on this idea and tried to make a sketch where a
+            ball
+            would bounce around in the window and when it is resized, it will adjust automatically to the window size. I
+            used a tutorial by <a href="https://youtu.be/Kp070rI_G48">Mr. Erdreich on YouTube</a> to help me figure out
+            the
+            logic of a
+            bouncing ball. Once I learned how to do it, I inputed the windowWidth and windowHeight code to where the
+            ball
+            detect collision. This code did work perfectly but I didn't like that it was still too simple for the
+            viewer. So
+            then I was stuck again on what to do. I kept on experimenting over and over again thinking that I'll find
+            something I like. I wanted to try making a ballpit simulation with adding more balls (I looked at the
+            tutorial
+            <a href="https://editor.p5js.org/2sman/sketches/Hysj-cm-f">"Basic Collision" by 2sman on p5.js</a> to learn
+            collision) but I was
+            having a difficult time with figuring out how to make the balls collide with each other so I scrapped the
+            idea
+            of the ballpit due to time constraints. I went back to the drawing with resize idea and continued working on
+            it
+            to add cooler effects. I started to put in the windowHeight and windowWidth code into the size of the circle
+            and
+            offset it so its not as big as the screen so it is still viewable. Then, I changed the circle to an ellipse
+            so I
+            can change its height and width. The result was unique! As you resize the window, the shape of the ellipse
+            change in height or width depending of the size of the window.
+        </p>
+        <center>
+            <img src="images-videos/changingDimensionBall.jpeg">
+            <p>Changing the ball dimensions with the resize feature</p>
+        </center>
+        <p> I was proud with what I came up with but I still wanted to make something even more amazing! I looked at the
+            reference page of p5.js and looked at what else I can do. I stumbled upon this <a
+                href="https://p5js.org/reference/#/p5/triangle">triangle page on the p5.js reference</a> and that's when
+            I
+            remembered that I can use 3D rotate to animate the circle to make it look better.</p>
+        <center>
+            <video controls>
+                <source src="images-videos/a3idea2.mp4">
+            </video>
+            <p>Using the rotate Y animation with the resize interaction.</p>
+        </center>
+        <p>It was very cool to see the screen creating something automatically while using the resize feature. Each time
+            I
+            reset the page was like creating an abstract piece of art as I get a different result everytime I play
+            around
+            with the window resize. I tried to change the aesthetic of the drawing and played around with the animation
+            as
+            you can see in these images below.</p>
+        <center>
+            <img src="images-videos/aestheticChange1.jpeg">
+            <img src="images-videos/aestheticChange2.jpeg">
+            <img src="images-videos/aestheticChange3.jpeg">
+            <img src="images-videos/aestheticChange4.jpeg">
+        </center>
+        <p>I decided that I want the final aesthetic to be a dark background with colourful outlines. This reminds me a
+            lot
+            of a topographic map which I think is pretty cool! I followed a p5.js sketch called <a
+                href="https://editor.p5js.org/lberdugo/sketches/BJG10p4dZ">"timer_backgroundColorChange" by Iberdugo on
                 the
-                p5.js editor</a></li>
-        <li>Note: I apologized if I missed a few resources but they should be cited in the comments in their respected
-            file.</li>
-    </ul>
+                p5.js editor</a> to help figure out how to change the colour of the outline of the circle every 7.5
+            seconds.
+        </p>
+        <center>
+            <video controls>
+                <source src="images-videos/final_aesthetic.mp4">
+            </video>
+            <p>Here's the video of the final aesthetic.</p>
+        </center>
 
+        <h3>Resources</h3>
+        <ul>
+            <li><a href="https://endless-summer.richardmille.com/">"Endless Summer" by Richard Mille</a></li>
+            <li><a href="https://youtu.be/Kp070rI_G48">"How to make objects bounce off walls in the P5.js programming
+                    language" by Mr. Erdreich on YouTube</a></li>
+            <li><a href="https://editor.p5js.org/2sman/sketches/Hysj-cm-f">"Basic Collision" by 2sman on p5.js</a></li>
+            <li><a href="https://p5js.org/reference/#/p5/triangle">triangle page on the p5.js reference</a></li>
+            <li><a href="https://editor.p5js.org/lberdugo/sketches/BJG10p4dZ">"timer_backgroundColorChange" by Iberdugo
+                    on
+                    the
+                    p5.js editor</a></li>
+            <li>Note: I apologized if I missed a few resources but they should be cited in the comments in their
+                respected
+                file.</li>
+        </ul>
+    </div>
+    <script src="../../readings/R1/anime.min.js"></script>
+    <script src="../../readings/R1/reading1.js"></script>
 </body>
 
 </html>

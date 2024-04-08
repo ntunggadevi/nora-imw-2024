@@ -9,10 +9,10 @@ body {
     line-height: 200%;
 }
 
-img {
-    margin-left: 5px;
+.grid-images {
     height: 300px;
 }
+
 
 video {
     height: 300px;
@@ -29,6 +29,7 @@ h3 {
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: fit-content;
 }
 
 .grid-item {
