@@ -1,0 +1,11 @@
+.smaller-fit {
+    height: 300px;
+}
+
+body {
+    line-height: 1.6;
+}
+
+li {
+    background-image: none;
+}
